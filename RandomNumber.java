@@ -11,11 +11,13 @@ class RandomNumber{
 			System.out.print(arr[i]+"  ");
 		}
 		
-		int max = 0;
+		int max = 0, min = Integer.MAX_VALUE;
 		for(int i=0;i<5;i++){
 			if(arr[i]>max) max = arr[i];
+			if(arr[i]<min) min = arr[i];
 		}
 
+		System.out.println("Minimum Number is : "+ min);
 		System.out.println("Maximum Number is : "+ max); 
 	}
 }
